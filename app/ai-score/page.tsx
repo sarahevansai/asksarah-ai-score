@@ -406,7 +406,7 @@ export default function AIScorePage() {
             <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-brand-surface border border-brand-border">
               <div className="max-w-2xl mx-auto text-center">
                 <h2 className="text-xl font-bold text-brand-text mb-3">
-                  Why AI Visibility Matters in 2024+
+                  Why AI Visibility Matters
                 </h2>
                 <p className="text-brand-subtext text-sm leading-relaxed mb-6">
                   Over 40% of Google searches now show AI-generated answers. ChatGPT handles
