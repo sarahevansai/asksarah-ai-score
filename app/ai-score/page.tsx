@@ -56,8 +56,8 @@ export default function AIScorePage() {
         resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
       }, 100)
 
-      // Show GEO GPT modal after a delay
-      setTimeout(() => setShowGEOModal(true), 2500)
+      // Don't show modal - instead show instructions inline
+      // setTimeout(() => setShowGEOModal(true), 2500)
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Something went wrong. Please try again.'
       setError(message)
