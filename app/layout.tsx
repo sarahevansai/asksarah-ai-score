@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     'AI readiness score',
     'asksarah.ai',
   ],
-  authors: [{ name: 'Sarah Evans', url: 'https://asksarah.ai' }],
-  creator: 'Sarah Evans',
+  authors: [{ name: 'Zen Media', url: 'https://zenmedia.com' }],
+  creator: 'Zen Media',
   publisher: 'askSarah.ai',
   robots: {
     index: true,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: 'askSarah.ai',
     title: 'AI Visibility Score — Is Your Website Visible to AI?',
     description:
-      'Score your site\'s AI visibility in seconds. Free tool by Sarah Evans — no signup required.',
+      'Score your site\'s AI visibility in seconds. Free tool by Zen Media — no signup required.',
     images: [
       {
         url: 'https://asksarah.ai/og-ai-score.png',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI Visibility Score — Is Your Website Visible to AI?',
     description:
-      'Score your site\'s AI visibility in seconds. Free tool by Sarah Evans.',
+      'Score your site\'s AI visibility in seconds. Free tool by Zen Media.',
     creator: '@prsarahevans',
     images: ['https://asksarah.ai/og-ai-score.png'],
   },
