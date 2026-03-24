@@ -271,7 +271,7 @@ export default function AIScorePage() {
                   Open AI Visibility Engine GEO
                 </a>
                 <p className="text-xs text-brand-subtext mt-3">
-                  Free custom GPT by Sarah Evans
+                  Powered by Zen Media's AI Visibility Engine
                 </p>
               </motion.div>
 
