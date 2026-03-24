@@ -8,7 +8,7 @@ import AnalyzerInput from '@/components/AnalyzerInput'
 import LoadingAnimation from '@/components/LoadingAnimation'
 import ScoreCard from '@/components/ScoreCard'
 import MetricsGrid from '@/components/MetricsGrid'
-// import GEOGPTModal from '@/components/GEOGPTModal' // Removed: CTA is inline instead
+import GEOGPTModal from '@/components/GEOGPTModal'
 import PDFReport from '@/components/PDFReport'
 import type { AnalysisResult } from '@/lib/types'
 
@@ -26,7 +26,7 @@ export default function AIScorePage() {
   const [analyzingUrl, setAnalyzingUrl] = useState('')
   const [result, setResult] = useState<AnalysisResult | null>(null)
   const [error, setError] = useState<string | null>(null)
-  // const [showGEOModal, setShowGEOModal] = useState(false) // Removed: CTA is inline instead
+  const [showGEOModal, setShowGEOModal] = useState(false)
   const resultsRef = useRef<HTMLDivElement>(null)
 
   const handleAnalyze = useCallback(async (url: string) => {
@@ -56,8 +56,8 @@ export default function AIScorePage() {
         resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
       }, 100)
 
-      // Don't show modal - instead show instructions inline
-      // setTimeout(() => setShowGEOModal(true), 2500)
+      // Show GEO GPT modal after a delay
+      setTimeout(() => setShowGEOModal(true), 2500)
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Something went wrong. Please try again.'
       setError(message)
@@ -432,7 +432,14 @@ export default function AIScorePage() {
       </AnimatePresence>
 
       {/* GEO GPT Modal */}
-      {/* GEOGPTModal removed: CTA is inline in results instead */}
+      {result && (
+        <GEOGPTModal
+          isOpen={showGEOModal}
+          onClose={() => setShowGEOModal(false)}
+          score={result.totalScore}
+          domain={result.domain}
+        />
+      )}
 
       {/* Footer */}
       <footer className="relative z-10 border-t border-brand-border py-8 px-6 text-center">

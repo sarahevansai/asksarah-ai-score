@@ -136,20 +136,19 @@ export default function GEOGPTModal({ isOpen, onClose, score, domain }: GEOGPTMo
               {/* Body content */}
               <div className="relative px-6 pb-2">
                 <p className="text-sm text-brand-subtext leading-relaxed mb-4">
-                  The <span className="text-brand-accent font-medium">AI Visibility Engine GEO</span> is
-                  Sarah Evans&apos; custom GPT that turns your score into a step-by-step action plan —
-                  with exact fixes, schema templates, and content strategies to get your site cited
-                  by ChatGPT, Perplexity, and Google AI Overviews.
+                  The <span className="text-brand-accent font-medium">AI Visibility Engine GEO</span> analyzes
+                  100 AI prompts about your brand to unlock deeper insights. Then unlock API access for
+                  thousands more prompts — giving you complete control over how AI perceives your company.
                 </p>
 
                 {/* Feature bullets */}
                 <ul className="space-y-2 mb-5">
                   {[
-                    'Paste your score → get a personalized fix plan',
-                    'Schema.org templates for your content type',
-                    'FAQ & definition content frameworks',
-                    'E-E-A-T improvement checklist',
-                    'Track progress with follow-up scoring',
+                    'Analyze 100 prompts specific to your brand',
+                    'See exactly what AI says about you vs competitors',
+                    'Unlock API access for thousands more prompts',
+                    'Get real-time visibility into AI perception',
+                    'Built by Zen Media - the AI visibility experts',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2 text-xs text-brand-subtext">
                       <Zap className="w-3.5 h-3.5 text-brand-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
