@@ -8,7 +8,7 @@ import AnalyzerInput from '@/components/AnalyzerInput'
 import LoadingAnimation from '@/components/LoadingAnimation'
 import ScoreCard from '@/components/ScoreCard'
 import MetricsGrid from '@/components/MetricsGrid'
-import GEOGPTModal from '@/components/GEOGPTModal'
+// import GEOGPTModal from '@/components/GEOGPTModal' // Removed: CTA is inline instead
 import PDFReport from '@/components/PDFReport'
 import type { AnalysisResult } from '@/lib/types'
 
@@ -26,7 +26,7 @@ export default function AIScorePage() {
   const [analyzingUrl, setAnalyzingUrl] = useState('')
   const [result, setResult] = useState<AnalysisResult | null>(null)
   const [error, setError] = useState<string | null>(null)
-  const [showGEOModal, setShowGEOModal] = useState(false)
+  // const [showGEOModal, setShowGEOModal] = useState(false) // Removed: CTA is inline instead
   const resultsRef = useRef<HTMLDivElement>(null)
 
   const handleAnalyze = useCallback(async (url: string) => {
@@ -432,14 +432,7 @@ export default function AIScorePage() {
       </AnimatePresence>
 
       {/* GEO GPT Modal */}
-      {result && (
-        <GEOGPTModal
-          isOpen={showGEOModal}
-          onClose={() => setShowGEOModal(false)}
-          score={result.totalScore}
-          domain={result.domain}
-        />
-      )}
+      {/* GEOGPTModal removed: CTA is inline in results instead */}
 
       {/* Footer */}
       <footer className="relative z-10 border-t border-brand-border py-8 px-6 text-center">
