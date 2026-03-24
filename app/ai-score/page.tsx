@@ -255,11 +255,11 @@ export default function AIScorePage() {
                   <Sparkles className="w-5 h-5 text-brand-accent" aria-hidden="true" />
                 </div>
                 <h3 className="text-base font-semibold text-brand-text mb-2">
-                  Turn Your Score into an Action Plan
+                  Learn How to Fix Your Score
                 </h3>
                 <p className="text-sm text-brand-subtext mb-4 max-w-md mx-auto">
-                  Get step-by-step fixes, schema templates, and a personalized strategy to
-                  get your site cited by AI assistants.
+                  Share your results with the AI Visibility Engine to get personalized prompts,
+                  schema templates, and step-by-step instructions for your content.
                 </p>
                 <a
                   href="https://chatgpt.com/g/g-6904a060fd8c8191bf5cdbc82571fee9-ai-visibility-engine-geo"
